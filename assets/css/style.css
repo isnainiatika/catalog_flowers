@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+/*atas*/
+header {
+    font-family: 'Oswald', sans-serif;
+    display: inline;
+}
+
+.head {
+    font-size: 30px;
+    text-align: center;
+    line-height: 1em;
+    text-shadow: 2px 2px 7px aquamarine;
+    color: rgb(22, 21, 21);
+    padding: 50px;
+    background:center/cover url(..//img/home.jpg);
+}
+
+nav {
+    background-color: rgb(5, 148, 105);
+    padding: 5px;
+    position: sticky;
+    top: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    list-style-type: none;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+nav a {
+    font-size: 20px;
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+nav a:hover {
+    font-weight: bold;
+}
+/*endofatas*/
+
+/*content*/
+main {
+    padding: 10px 30px 30px;
+    overflow: auto;
+    background-color: #D9F8C4; 
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    text-align: center;
+}
+.flex-item-1 {
+    background-color: #f1f1f1;
+    padding: 10px;
+    flex: 50%;
+}
+
+.card {
+    margin-top: 30px;
+    padding: 10px 40px 20px;
+    box-shadow: 0px 2px 9px 3px aquamarine;
+    background: whitesmoke;
+}
+
+h2,h3 {
+    font-family: 'Oswald', sans-serif;
+    color: rgb(5, 148, 105);
+}
+
+h3 {
+    line-height: 1em;
+}
+
+hr {
+    height: 10px;
+    border: 0;
+    box-shadow: 0 10px 10px -8px rgb(9, 80, 18) inset;
+}
+
+article {
+    text-align: justify;
+}
+
+article a {
+    text-decoration: none;
+    color: rgb(5, 148, 105);
+}
+
+article a:hover {
+    color: rgb(9, 80, 18);
+}
+
+article figure {
+    text-align: center;
+}
+
+.penulis {
+    text-align: left;
+    line-height: 0.25em;
+    font-size: 13px;
+}
+
+.pic {
+    width: 180px;
+    height: 200px;
+}
+
+button {
+    height: 2em;
+    width: 100%;
+    background: aquamarine;
+    border: thin;
+    border-radius: 3px;
+    color: whitesmoke;
+    font-weight: 600;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+}
+
+button:hover {
+    box-shadow: 5px 5px 7px -5px rgb(113, 233, 129);
+    color: rgb(9, 80, 18);
+}
+
+button:active {
+    background: aqua;
+    border: 0.5;
+}
+
+#content {
+    float: left;
+    width: 70%;
+}
+/*endofcontent*/
+
+/*aside*/
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 30px;
+}
+
+.profile {
+    padding : 10px;
+}
+
+.profile header{
+    text-align: center;
+    line-height: 0.5em;
+}
+
+
+.profile img {
+    width: 200px;
+}
+
+.profile figure {
+    margin: 0px;
+}
+
+.profile figcaption {
+    line-height: 2em;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+}
+/*endofaside*/
+
+/*footer*/
+footer {
+    background-color: rgb(5, 148, 105);
+    padding: 5px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+}
+/*endoffooter*/
+
+@media screen and (max-width: 1048px) {
+    main {
+        padding: 5px 15px 15px;
+    }
+
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+
+    .pic {
+        width: 400px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 712px) {
+    .pic {
+        width: 300px;
+    }
+
+    .head {
+        line-height: normal;
+    }
+
+    .card {
+        padding: 7px 30px 15px;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .card {
+        padding: 5px 12px 7px;
+    }
+    
+    .pic {
+        width: 150px;
+    }
+
+    .penulis {
+        line-height: normal;
+    }
+
+    .head {
+        line-height: normal;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
